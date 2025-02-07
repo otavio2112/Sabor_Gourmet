@@ -5,12 +5,13 @@ html {
 body{
     margin: 0;
     background-image: url(img/background.png);
+    background-size: cover;
 }
 
 header {
     width: 100vw;
     height: 50%;
-    background-color: #ef880b;
+    background-color: #671205;
     display: flex;
     flex-direction: column;
 }
@@ -20,8 +21,8 @@ h1{
 }
 
 h1, h2 {
-    text-align: center;
-    padding-right: 620px;
+   align-items: center;
+  padding-right: 620px;
 }
 
 nav ul {
@@ -33,14 +34,14 @@ nav ul {
 }
 
 nav a {
-    color: black;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-weight: 700;
     transition: color 0.3s ease;
 }
 
 nav a:hover{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .logo img {
@@ -48,6 +49,7 @@ nav a:hover{
     height: 100px;
     padding-left: 10px;
     padding-top: 10px;
+    border-radius: 20px;
 }
 
 .cabeçalho {
@@ -56,9 +58,46 @@ nav a:hover{
     width: 100vw;
 }
 
-.container {
+/* .container {
     width: 100vw;
     height: 100vh;
     background-image: url(img/background.png);
     background-size: cover;
+} */
+
+h2 {
+    text-align: center;
+    margin-left: 200px;
+}
+
+.cardapio {
+    background-color: #67120575;
+    margin-top: 20px;
+    border-radius: 11px;
+    margin-left: 20px;
+}
+
+.pratos {
+   color: aliceblue;
+}
+
+.img_pratos {
+    width: 150px;
+    margin-top: 15px;
+    display: grid
+    height: 100px;
+    margin-left: 5px;
+    justify-content: space-around;
+}
+
+.entradas_fotos {
+    justify-content: space-around;
+}
+
+/* .entradas_letras {
+    font-size: 2px;
+} */
+
+.precos {
+    color: aliceblue;
 }
