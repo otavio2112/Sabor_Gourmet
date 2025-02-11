@@ -1,35 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title> Sabor Gourmet </title>
-        <link rel="stylesheet" href="cardapio.css">
-    </head>
 
-    <header>
-        <div class="cabeçalho">
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div>
-            <div class="títulos">
-                <h1 style="color: rgba(255, 255, 255, 0.747);">SABOR GOURMET</h1>
-                <h2 style="color: rgba(255, 255, 255, 0.747);">O melhor da comida brasileira</h2>
-            </div>
-        </div>       
-        <nav>
-            <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="cardapio.html">Cardápio</a></li>
-                <li><a href="reservas.html">Reservas</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Sabor Gourmet </title>
+    <link rel="stylesheet" href="reservas.css">
+</head>
 
-    <body>
-        <main class="container">
-            
-        </main>
-    </body>
+<header>
+    <div class="cabeçalho">
+        <div class="logo">
+            <img src="img/logo.png" alt="">
+        </div>
+        <div class="títulos">
+            <h1 style="color: rgba(255, 255, 255, 0.747);">SABOR GOURMET</h1>
+            <h2 style="color: rgba(255, 255, 255, 0.747);">O melhor da comida brasileira</h2>
+        </div>
+    </div>
+    <nav>
+        <ul> <!-- Referência os tópicos do site, que estão no cabeçalho -->
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cardapio.html">Cardápio</a></li>
+            <li><a href="reservas.html">Reservas</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+</header>
+
+<body>
+    <main class="container"> <!-- Cria um formulário, neste caso, usado para as reservas-->
+        <section class="reservas">
+            <form id="formReservas" action="#" method="post">
+                <p class="titulo"> Reservas </p><br><br> <!-- Título -->
+                <div class="requisitos">
+                    <!-- Campo para Nome -->
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required><br><br>
+
+                    <!-- Campo para Sobrenome -->
+                    <label for="sobrenome">Sobrenome:</label>
+                    <input type="text" id="sobrenome" name="sobrenome" placeholder="Digite seu sobrenome" required><br><br>
+
+                    <!-- Campo para Número da Mesa -->
+                    <label for="numero_mesa">Número da mesa:</label>
+                    <input type="int" id="mesa" name="mesa" placeholder="Escolha sua mesa" required><br><br>
+
+                    <!-- Campo para Horário -->
+                    <label for="horario">Horário:</label>
+                    <input type="time" id="horario" name="horario" placeholder="Informe o horário da reserva"
+                        required><br><br>
+
+                    <!-- Campo para Telefone -->
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required><br><br>
+
+                    <!-- Campo de Texto para Preferências -->
+                    <label for="preferências">Preferências:</label><br>
+                    <textarea id="preferências" name="preferências" rows="4" cols="50"
+                    placeholder="Escreva suas preferências aqui..."></textarea><br><br>
+                </div>
+                <div class="botoes">
+                    <!-- Botão de Submissão -->
+                    <input type="submit" value="Reservar">
+                    <input type="reset" value="Limpar">
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+
 </html>
